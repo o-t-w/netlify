@@ -5,9 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	<script src="https://get.mavo.io/mavo.min.js"></script>
+<link rel="stylesheet" href="https://get.mavo.io/mavo.css">
 </head>
 <body>
-<h1>test</h1>	
+	<div mv-app="home" mv-storage="https://github.com/USERNAME">
+		<h1 property="title">test</h1>	
+
+		<p property="intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ducimus officia suscipit odio sed provident excepturi, quia distinctio, at libero voluptatum quasi eius illo doloremque harum. Corrupti tempore neque rem!</p>
+	</div>
+
 <form netlify name="contact" method="POST">
 	<label name="name" for="name">name</label>	<input id="name" type="text">
 	<label for="message">message</label>
