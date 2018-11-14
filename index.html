@@ -34,7 +34,24 @@ h1 {
 	margin: 0;
 	text-align: center;
 	font-size: calc(15px + 5.2vw + 1.3vh);
+	animation: fontstuff;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
+
+@keyframes fontstuff{
+	0% {
+		font-variation-settings: "BVEL" 0, "SHDW" 100;
+	}
+	50% {
+		font-variation-settings: "BVEL" 100, "SHDW" 0;
+	}
+	100% {
+		font-variation-settings: "BVEL" 0, "SHDW" 100;
+	}
+}
+
 </style>
 </head>
 <body>
