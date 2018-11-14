@@ -1,69 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Hello World!</title>
 	<style>
-	@font-face {
-    font-family: 'RocherColor';
-    src: url('./RocherColorGX.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-html {
-    font-family: RocherColor;
-    font-weight: normal;
-    font-variation-settings: "BVEL" 50, "SHDW" 100;
-}
+		@font-face {
+			font-family: 'RocherColor';
+			src: url('./RocherColorGX.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+		}
 
-html, body {
-	margin: 0;
-	padding: 0;
-}
+		html {
+			font-family: RocherColor;
+			font-weight: normal;
+			font-variation-settings: "BVEL"50, "SHDW"100;
+		}
 
-body {
-	min-height: 100vh;
-	width: 100vw;
-	place-items: center;
-	display: grid;
-}
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+		}
 
-h1 {
-	margin: 0;
-	text-align: center;
-	font-size: calc(15px + 5.2vw + 1.3vh);
-	animation: fontstuff;
-	animation-duration: 2s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-}
+		body {
+			min-height: 100vh;
+			width: 100vw;
+			place-items: center;
+			display: grid;
+		}
 
-@keyframes fontstuff{
-	0% {
-		font-variation-settings: "BVEL" 0, "SHDW" 100;
-	}
-	50% {
-		font-variation-settings: "BVEL" 100, "SHDW" 0;
-	}
-	100% {
-		font-variation-settings: "BVEL" 0, "SHDW" 100;
-	}
-}
+		h1 {
+			margin: 0;
+			text-align: center;
+			font-size: calc(15px + 5.2vw + 1.3vh);
+			animation: fontstuff;
+			animation-duration: 0s;
+			animation-timing-function: ease;
+			animation-iteration-count: 1;
+			animation-duration: 2s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			position: relative;
+			margin: 0;
+			padding: 0;
+		}
 
-h1:after {
-	content: "";
-	height: 100%;
-	width: 100%;
-	background: -moz-element(#main-title);
-	background: element(#main-title);
-}
+		@keyframes fontstuff {
+			0% {
+				font-variation-settings: "BVEL"0, "SHDW"100;
+			}
 
-</style>
+			50% {
+				font-variation-settings: "BVEL"100, "SHDW"0;
+			}
+
+			100% {
+				font-variation-settings: "BVEL"0, "SHDW"100;
+			}
+		}
+
+		h1:after {
+			content: "";
+			height: 98px;
+			width: 100%;
+			background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)), -moz-element(#main-title);
+			background: element(#main-title);
+			position: absolute;
+			background-repeat: no-repeat;
+			transform: rotateX(180deg);
+			transform-origin: 15px center;
+			position: absolute;
+			display: block;
+			margin: 0;
+			padding: 0;
+			top: 70%;
+			z-index: -1;
+		}
+	</style>
 </head>
+
 <body>
-		<h1 id="main-title">Hello World!</h1>	
+	<h1 contenteditable="true" id="main-title">Hello World!</h1>
 
 </body>
+
 </html>
