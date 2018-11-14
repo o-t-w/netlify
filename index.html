@@ -31,6 +31,15 @@
 			width: 100vw;
 			place-items: center;
 			display: grid;
+			background: -moz-element(#main-title);
+			overflow: hidden;
+		}
+
+		body:after {
+			background: rgba(255, 255, 25, .8);
+			content: "";
+			width: 100vw;
+			height: 100vh;
 		}
 
 		h1 {
@@ -61,24 +70,6 @@
 			100% {
 				font-variation-settings: "BVEL"0, "SHDW"100;
 			}
-		}
-
-		h1:after {
-			content: "";
-			height: 98px;
-			width: 100%;
-			background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)), -moz-element(#main-title);
-			background: element(#main-title);
-			position: absolute;
-			background-repeat: no-repeat;
-			transform: rotateX(180deg);
-			transform-origin: 15px center;
-			position: absolute;
-			display: block;
-			margin: 0;
-			padding: 0;
-			top: 70%;
-			z-index: -1;
 		}
 	</style>
 </head>
