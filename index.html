@@ -52,10 +52,18 @@ h1 {
 	}
 }
 
+h1:after {
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: -moz-element(#main-title);
+	background: element(#main-title);
+}
+
 </style>
 </head>
 <body>
-		<h1>Hello World!</h1>	
+		<h1 id="main-title">Hello World!</h1>	
 
 </body>
 </html>
