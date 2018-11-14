@@ -36,10 +36,12 @@
 		}
 
 		body:after {
-			background: rgba(255, 255, 25, .8);
+			background: rgba(25, 40, 255, 0.83);
 			content: "";
 			width: 100vw;
 			height: 100vh;
+			top: 0;
+			z-index: -1;
 		}
 
 		h1 {
@@ -56,6 +58,11 @@
 			position: relative;
 			margin: 0;
 			padding: 0;
+			caret-color: transparent;
+		}
+
+		h1:focus {
+			outline: none;
 		}
 
 		@keyframes fontstuff {
