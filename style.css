@@ -71,10 +71,11 @@ h1:focus {
 
 h2 {
 	position: absolute;
+	font-weight: normal;
 	top: 2px;
-	right: 2px;
+	right: 8px;
 	margin: 0;
-	font-size: calc(14px + 4.5vw + 1vh);
+	font-size: calc(14px + 4vw + 1vh);
 }
 
 @keyframes fontstuff {
