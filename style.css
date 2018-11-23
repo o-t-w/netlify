@@ -69,6 +69,14 @@ h1:focus {
 	outline: none;
 }
 
+h2 {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	margin: 0;
+	font-size: calc(14px + 4.5vw + 1vh);
+}
+
 @keyframes fontstuff {
 	0% {
 		font-variation-settings: "BVEL"0, "SHDW"100;
